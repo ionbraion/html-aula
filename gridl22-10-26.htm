@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+
+        * {border: 5px solid black;}
+        .main{
+            grid-template-rows:  100px 200px 100px;
+            display: grid;
+            grid-template-areas: 
+            "header header header"
+            "menu  secao aside"
+            "rodape rodape rodape";
+            /*grid-template-columns: 100px 100px 1fr ;
+            grid-template-rows: 300px 50px 100px;*/
+        }
+        header{
+            grid-area: header;
+        }
+        section{
+            grid-area: secao;
+        }
+        footer{
+            grid-area: rodape ;
+        }
+        aside{
+            grid-area: aside;
+        }
+
+        menu{
+            grid-area: menu;
+        }
+        /*aside{
+            grid-row-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }*/
+    </style>
+</head>
+<body>
+    <div class="main">
+        <header>header</header>
+        <menu>menu</menu>
+        <section >section</section>
+        <aside>aside</aside>
+        <footer>rodapé</footer>
+    </div>    
+</body>
+</html>
